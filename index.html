@@ -14,11 +14,21 @@
         <img src="foto.jpg" alt="Yusuf Niko Fitranto" class="profile-pic">
         <h1>Yusuf Niko Fitranto</h1>
         <p class="subtitle">IT Infrastructure Engineer</p>
-        <a href="cv.pdf" download class="btn-cv">Download CV</a>
+        <p class="location">📍 Indonesia</p>
+        <div class="header-links">
+            <a href="cv.pdf" download class="btn-cv">Download CV</a>
+        </div>
     </header>
 
-    <section>
-        <h2>Professional Summary</h2>
+    <nav>
+        <a href="#about">Intro</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>Intro</h2>
         <div class="card">
             <p>
                 IT Infrastructure Engineer with nearly 1 year of hands-on experience
@@ -29,26 +39,38 @@
         </div>
     </section>
 
-    <section>
-        <h2>Technical Skills</h2>
+    <section id="skills">
+        <h2>Skills</h2>
         <div class="card">
+            <h3>Infrastructure & Virtualization</h3>
             <ul>
-                <li>Virtualization: Proxmox VE (VM provisioning & resource management)</li>
-                <li>Containerization: Docker (Application deployment & management)</li>
-                <li>Monitoring: Zabbix (Infrastructure monitoring & alert handling)</li>
-                <li>Web Server & Reverse Proxy: Nginx (HTTPS & SSL configuration)</li>
-                <li>DNS Management (Local DNS routing)</li>
-                <li>Network Configuration (VLAN, DHCP, Static Routing)</li>
+                <li>Proxmox VE — VM provisioning & resource management</li>
+                <li>Docker — Application deployment & management</li>
                 <li>Linux Server Administration</li>
+            </ul>
+            <h3>Networking</h3>
+            <ul>
+                <li>Network Configuration (VLAN, DHCP, Static Routing)</li>
+                <li>DNS Management (Local DNS routing)</li>
+            </ul>
+            <h3>Web & Monitoring</h3>
+            <ul>
+                <li>Nginx — Web server & reverse proxy (HTTPS & SSL)</li>
+                <li>Zabbix — Infrastructure monitoring & alert handling</li>
             </ul>
         </div>
     </section>
 
-    <section>
+    <section id="experience">
         <h2>Experience</h2>
         <div class="card">
-            <p><strong>IT Infrastructure Engineer</strong></p>
-            <p>PT Nusantara Energi Indonesia | 2025 - Present</p>
+            <div class="exp-header">
+                <div>
+                    <p class="exp-company">PT Nusantara Energi Indonesia</p>
+                    <p class="exp-role">IT Infrastructure Engineer</p>
+                </div>
+                <span class="exp-period">2025 — Present</span>
+            </div>
             <ul>
                 <li>Provisioned and managed virtual machines using Proxmox VE.</li>
                 <li>Deployed containerized applications using Docker.</li>
@@ -60,15 +82,31 @@
         </div>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
-        <div class="card">
-            <p>Email: yusufnikof@gmail.com</p>
-            <p>LinkedIn: linkedin.com/in/yusufnikof</p>
-            <p>WhatsApp: +62 812-1228-6472</p>
-            <p>GitHub: github.com/yusufnikof1</p>
+        <div class="card contact-card">
+            <a href="mailto:yusufnikof@gmail.com" class="contact-item">
+                <span class="contact-icon">✉</span>
+                <span>yusufnikof@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/yusufnikof" target="_blank" class="contact-item">
+                <span class="contact-icon">in</span>
+                <span>linkedin.com/in/yusufnikof</span>
+            </a>
+            <a href="https://github.com/yusufnikof" target="_blank" class="contact-item">
+                <span class="contact-icon">gh</span>
+                <span>github.com/yusufnikof1</span>
+            </a>
+            <a href="https://wa.me/6281234567890" target="_blank" class="contact-item">
+                <span class="contact-icon">wa</span>
+                <span>+62 812-1228-6472</span>
+            </a>
         </div>
     </section>
+
+    <footer>
+        <p>© 2025 Yusuf Niko Fitranto</p>
+    </footer>
 
 </div>
 
