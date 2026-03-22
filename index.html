@@ -2,36 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yusuf Niko Fitranto - IT Infrastructure Engineer</title>
+    <title>Yusuf Niko Fitranto — IT Infrastructure Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+
 <div class="container">
 
-    <header>
-        <img src="foto.jpg" alt="Yusuf Niko Fitranto" class="profile-pic">
-        <h1>Yusuf Niko Fitranto</h1>
-        <p class="subtitle">IT Infrastructure Engineer</p>
-        <p class="location">📍 Indonesia</p>
-        <div class="header-links">
-            <a href="cv.pdf" download class="btn-cv">Download CV</a>
+    <header class="site-header reveal">
+        <div class="header-top">
+            <div class="monogram">YNF</div>
+            <nav class="nav-links">
+                <a href="#summary">Summary</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <div class="header-body">
+            <div class="header-meta">
+                <span class="label">Based in Indonesia</span>
+                <span class="divider">·</span>
+                <span class="label">Available for opportunities</span>
+            </div>
+            <h1>Yusuf Niko<br><em>Fitranto</em></h1>
+            <p class="role">IT Infrastructure Engineer</p>
+            <div class="header-line"></div>
         </div>
     </header>
 
-    <nav>
-        <a href="#about">Intro</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about">
-        <h2>Intro</h2>
-        <div class="card">
-            <p>
-                IT Infrastructure Engineer with nearly 1 year of hands-on experience
+    <section id="summary" class="section reveal">
+        <div class="section-label">
+            <span class="label-num">01</span>
+            <span class="label-text">Summary</span>
+        </div>
+        <div class="section-body">
+            <p class="summary-text">
+                IT Infrastructure Engineer with nearly <strong>1 year</strong> of hands-on experience
                 supporting network operations, server maintenance, and end-user troubleshooting.
                 Experienced in maintaining daily infrastructure tasks while continuously improving
                 technical and problem-solving skills in a team-based environment.
@@ -39,76 +53,175 @@
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="card">
-            <h3>Infrastructure & Virtualization</h3>
-            <ul>
-                <li>Proxmox VE — VM provisioning & resource management</li>
-                <li>Docker — Application deployment & management</li>
-                <li>Linux Server Administration</li>
-            </ul>
-            <h3>Networking</h3>
-            <ul>
-                <li>Network Configuration (VLAN, DHCP, Static Routing)</li>
-                <li>DNS Management (Local DNS routing)</li>
-            </ul>
-            <h3>Web & Monitoring</h3>
-            <ul>
-                <li>Nginx — Web server & reverse proxy (HTTPS & SSL)</li>
-                <li>Zabbix — Infrastructure monitoring & alert handling</li>
-            </ul>
+    <section id="skills" class="section reveal">
+        <div class="section-label">
+            <span class="label-num">02</span>
+            <span class="label-text">Technical Skills</span>
         </div>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <div class="exp-header">
-                <div>
-                    <p class="exp-company">PT Nusantara Energi Indonesia</p>
-                    <p class="exp-role">IT Infrastructure Engineer</p>
+        <div class="section-body">
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">⬡</div>
+                    <div class="skill-info">
+                        <span class="skill-name">Proxmox VE</span>
+                        <span class="skill-desc">VM provisioning & resource management</span>
+                    </div>
+                    <span class="skill-tag">Virtualization</span>
                 </div>
-                <span class="exp-period">2025 — Present</span>
+                <div class="skill-item">
+                    <div class="skill-icon">⬡</div>
+                    <div class="skill-info">
+                        <span class="skill-name">Docker</span>
+                        <span class="skill-desc">Application deployment & management</span>
+                    </div>
+                    <span class="skill-tag">Containerization</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">⬡</div>
+                    <div class="skill-info">
+                        <span class="skill-name">Zabbix</span>
+                        <span class="skill-desc">Infrastructure monitoring & alert handling</span>
+                    </div>
+                    <span class="skill-tag">Monitoring</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">⬡</div>
+                    <div class="skill-info">
+                        <span class="skill-name">Nginx</span>
+                        <span class="skill-desc">HTTPS & SSL configuration</span>
+                    </div>
+                    <span class="skill-tag">Web Server</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">⬡</div>
+                    <div class="skill-info">
+                        <span class="skill-name">DNS Management</span>
+                        <span class="skill-desc">Local DNS routing & configuration</span>
+                    </div>
+                    <span class="skill-tag">Networking</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">⬡</div>
+                    <div class="skill-info">
+                        <span class="skill-name">Linux Server</span>
+                        <span class="skill-desc">Administration & system management</span>
+                    </div>
+                    <span class="skill-tag">OS</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">⬡</div>
+                    <div class="skill-info">
+                        <span class="skill-name">Network Config</span>
+                        <span class="skill-desc">VLAN, DHCP, Static Routing</span>
+                    </div>
+                    <span class="skill-tag">Infrastructure</span>
+                </div>
             </div>
-            <ul>
-                <li>Provisioned and managed virtual machines using Proxmox VE.</li>
-                <li>Deployed containerized applications using Docker.</li>
-                <li>Configured Nginx as reverse proxy with HTTPS for internal services.</li>
-                <li>Managed local DNS configuration for internal application routing.</li>
-                <li>Monitored infrastructure performance using Zabbix and handled alerts.</li>
-                <li>Provided network and server troubleshooting support.</li>
-            </ul>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="card contact-card">
-            <a href="mailto:yusufnikof@gmail.com" class="contact-item">
-                <span class="contact-icon">✉</span>
-                <span>yusufnikof@gmail.com</span>
-            </a>
-            <a href="https://linkedin.com/in/yusufnikof" target="_blank" class="contact-item">
-                <span class="contact-icon">in</span>
-                <span>linkedin.com/in/yusufnikof</span>
-            </a>
-            <a href="https://github.com/yusufnikof" target="_blank" class="contact-item">
-                <span class="contact-icon">gh</span>
-                <span>github.com/yusufnikof1</span>
-            </a>
-            <a href="https://wa.me/6281234567890" target="_blank" class="contact-item">
-                <span class="contact-icon">wa</span>
-                <span>+62 812-1228-6472</span>
-            </a>
+    <section id="experience" class="section reveal">
+        <div class="section-label">
+            <span class="label-num">03</span>
+            <span class="label-text">Experience</span>
+        </div>
+        <div class="section-body">
+            <div class="exp-card">
+                <div class="exp-header">
+                    <div class="exp-left">
+                        <span class="exp-company">PT Nusantara Energi Indonesia</span>
+                        <h3 class="exp-role">IT Infrastructure Engineer</h3>
+                    </div>
+                    <div class="exp-right">
+                        <span class="exp-period">2025 — Present</span>
+                        <span class="exp-badge">Current</span>
+                    </div>
+                </div>
+                <div class="exp-divider"></div>
+                <ul class="exp-list">
+                    <li><span class="bullet">→</span>Provisioned and managed virtual machines using <strong>Proxmox VE</strong>.</li>
+                    <li><span class="bullet">→</span>Deployed containerized applications using <strong>Docker</strong>.</li>
+                    <li><span class="bullet">→</span>Configured <strong>Nginx</strong> as reverse proxy with HTTPS for internal services.</li>
+                    <li><span class="bullet">→</span>Managed local <strong>DNS configuration</strong> for internal application routing.</li>
+                    <li><span class="bullet">→</span>Monitored infrastructure performance using <strong>Zabbix</strong> and handled alerts.</li>
+                    <li><span class="bullet">→</span>Provided network and server troubleshooting support.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>© 2025 Yusuf Niko Fitranto</p>
+    <section id="contact" class="section reveal">
+        <div class="section-label">
+            <span class="label-num">04</span>
+            <span class="label-text">Contact</span>
+        </div>
+        <div class="section-body">
+            <div class="contact-grid">
+                <a href="mailto:yusufnikof@gmail.com" class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">yusufnikof@gmail.com</span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+                <a href="https://linkedin.com/in/yusufnikof" target="_blank" class="contact-item">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/yusufnikof</span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+                <a href="https://wa.me/6281234567890" target="_blank" class="contact-item">
+                    <span class="contact-label">WhatsApp</span>
+                    <span class="contact-value">+62 812-3456-7890</span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+                <a href="https://github.com/yusufnikof" target="_blank" class="contact-item">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/yusufnikof</span>
+                    <span class="contact-arrow">↗</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer reveal">
+        <span class="footer-mono">© 2025 Yusuf Niko Fitranto</span>
+        <span class="footer-dot">·</span>
+        <span class="footer-mono">IT Infrastructure Engineer</span>
     </footer>
 
 </div>
+
+<script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.skill-item').forEach((el, i) => {
+        el.style.animationDelay = `${i * 80}ms`;
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+    });
+
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            if (window.scrollY >= section.offsetTop - 120) current = section.getAttribute('id');
+        });
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+        });
+    });
+</script>
 
 </body>
 </html>
