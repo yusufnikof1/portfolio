@@ -367,6 +367,7 @@ h1 em {
     font-size: 14px;
     color: var(--text);
     line-height: 1.6;
+    flex-wrap: wrap;
 }
 
 .exp-list .bullet {
@@ -377,9 +378,15 @@ h1 em {
     margin-top: 2px;
 }
 
+.exp-list li span:not(.bullet) {
+    flex: 1;
+    min-width: 0;
+}
+
 .exp-list strong {
     color: var(--text-hi);
     font-weight: 500;
+    display: inline;
 }
 
 .contact-grid {
