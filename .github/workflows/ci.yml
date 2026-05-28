@@ -1,37 +1,28 @@
 name: CI Portfolio
-
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
-
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Validate HTML
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: .
-
       - name: Notify Telegram sukses
         if: success()
         run: |
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-            -d text="✅ Portfolio CI Passed!
-Commit: ${{ github.sha }}
-Branch: ${{ github.ref_name }}"
-
+            -d text="✅ Portfolio CI Passed!\nCommit: ${{ github.sha }}\nBranch: ${{ github.ref_name }}"
       - name: Notify Telegram gagal
         if: failure()
         run: |
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
             -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-            -d text="❌ Portfolio CI Failed!
-Commit: ${{ github.sha }}
-Cek GitHub Actions untuk detail."
+            -d text="❌ Portfolio CI Failed!\nCommit: ${{ github.sha }}\nCek GitHub Actions untuk detail."
