@@ -19,11 +19,11 @@ jobs:
         if: steps.validate.outcome == 'success'
         run: |
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
-            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-            -d text="✅ Portfolio CI Passed!\nCommit: ${{ github.sha }}\nBranch: ${{ github.ref_name }}"
+            --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            --data-urlencode "text=✅ Portfolio CI Passed! Commit: ${{ github.sha }} Branch: ${{ github.ref_name }}"
       - name: Notify Telegram gagal
         if: steps.validate.outcome == 'failure'
         run: |
           curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
-            -d chat_id="${{ secrets.TELEGRAM_CHAT_ID }}" \
-            -d text="❌ Portfolio CI Failed!\nCommit: ${{ github.sha }}\nCek GitHub Actions untuk detail."
+            --data-urlencode "chat_id=${{ secrets.TELEGRAM_CHAT_ID }}" \
+            --data-urlencode "text=❌ Portfolio CI Failed! Commit: ${{ github.sha }} Cek GitHub Actions untuk detail."
